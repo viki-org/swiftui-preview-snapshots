@@ -7,6 +7,7 @@ let package = Package(
     platforms: [
         .iOS(.v13),
         .tvOS(.v13),
+        
         .macOS(.v10_15),
     ],
     products: [
@@ -21,7 +22,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0"),
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.18.1"),
     ],
     targets: [
         // PreviewSnapshots target with no dependancies that can be imported into app code
